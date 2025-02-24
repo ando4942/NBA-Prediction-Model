@@ -1,5 +1,5 @@
 # NBA Game Data Scraper and Prediction Model
-Code to scrape an NBA statistics website. 
+Code to scrape data from website and train a model to predict games.
 
 ## Project Overview
 
@@ -13,14 +13,14 @@ Evaluation: Measures accuracy and precision of the model and outputs a confusion
 
 ### How It Works
 #### Data Scraping
-Scrapes team URLs from both Eastern and Western Conference standings.
-Extracts game details including date, result, score, home/away status, opponent, and team record.
-Saves the cleaned data to matches.csv.
+- Scrapes team URLs from both Eastern and Western Conference standings.
+- Extracts game details including date, result, score, home/away status, opponent, and team record.
+- Saves the cleaned data to matches.csv.
 #### Prediction Model
 The model uses the following features:
-venue_code: Encodes whether the game was at home or away.
-opp_code: Categorical encoding of the opponent team.
-day_code: Day of the week of the game.
-month: Month of the game.
+- venue_code: Encodes whether the game was at home or away.
+- opp_code: Categorical encoding of the opponent team.
+- day_code: Day of the week of the game.
+- month: Month of the game.
 Trains the model on data before 2024 and tests it on 2024 data.
 Uses accuracy and precision as evaluation metrics.
