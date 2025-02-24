@@ -22,4 +22,5 @@ The model uses the following features:
 - opp_code: Categorical encoding of the opponent team.
 - day_code: Day of the week of the game.
 - month: Month of the game.
+
 Trains the model on data before 2024 and tests it on 2024 data. Uses accuracy and precision as evaluation metrics.
